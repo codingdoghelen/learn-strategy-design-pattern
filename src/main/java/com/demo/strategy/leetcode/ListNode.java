@@ -1,4 +1,4 @@
-package ListNode;
+package com.demo.strategy.leetcode;
 
 public class ListNode {
     int val;            //数据 ：节点数据

@@ -1,4 +1,6 @@
-import ListNode.ListNode;
+package com.demo.strategy.leetcode;
+
+import com.demo.strategy.leetcode.ListNode;
 
 public class MiddleNode_876 {
     public static void main(String[] args) {
@@ -8,11 +10,11 @@ public class MiddleNode_876 {
 //
 //        System.out.println(numberOfSteps(123)); // 12
 //
-//        class ListNode {
+//        class com.demo.strategy.leetcode.ListNode {
 //            int val;
-//            ListNode next;
+//            com.demo.strategy.leetcode.ListNode next;
 //
-//            ListNode(int val) {
+//            com.demo.strategy.leetcode.ListNode(int val) {
 //                this.val = val;
 //                this.next = null;
 //            }
@@ -20,11 +22,11 @@ public class MiddleNode_876 {
 //
 //
 //// Create the nodes
-//        ListNode node1 = new ListNode(1);
-//        ListNode node2 = new ListNode(2);
-//        ListNode node3 = new ListNode(3);
-//        ListNode node4 = new ListNode(4);
-//        ListNode node5 = new ListNode(5);
+//        com.demo.strategy.leetcode.ListNode node1 = new com.demo.strategy.leetcode.ListNode(1);
+//        com.demo.strategy.leetcode.ListNode node2 = new com.demo.strategy.leetcode.ListNode(2);
+//        com.demo.strategy.leetcode.ListNode node3 = new com.demo.strategy.leetcode.ListNode(3);
+//        com.demo.strategy.leetcode.ListNode node4 = new com.demo.strategy.leetcode.ListNode(4);
+//        com.demo.strategy.leetcode.ListNode node5 = new com.demo.strategy.leetcode.ListNode(5);
 //
 //// Link the nodes together
 //        node1.next = node2;
@@ -33,7 +35,7 @@ public class MiddleNode_876 {
 //        node4.next = node5;
 //
 //// The linked list starts with node1
-//        ListNode head = node1;
+//        com.demo.strategy.leetcode.ListNode head = node1;
 //=
 //        System.out.println(middleNode(head)); // 6
 

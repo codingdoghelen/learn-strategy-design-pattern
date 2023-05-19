@@ -1,3 +1,5 @@
+package com.demo.strategy.leetcode;
+
 public class CheckPalindrome_9 {
     public static void main(String[] args) {
         System.out.println("test");
