@@ -14,24 +14,38 @@ public class ReplaceElementswithGreatestElementonRightSide_1299 {
 
 
         int j = 1;
-        int greatest =0;
+        int tempGreatestIndex =0;
+        int tempGreatest =0;
+
         for (int i = 0; i  < arr.length ; i++) {
 
 
-//
-//            while (arr[i] >=arr[j] && j < arr.length-1 ) {
-//                j++;
-//            }
+
+            while (j>i && j < arr.length-1 ) {
+                if(arr[j] > tempGreatestIndex) {
+                    tempGreatestIndex=j-1;
+                }
+                j++;
+
+            }
+
+            System.out.println(tempGreatestIndex);
 //
 //            System.out.println(j);
-//
+
 //            if(i== arr.length-1) {
 //                arr[i] = -1;
 //            }
 //
+
 //            if (arr[i] < arr[j]){
-//                arr[i] = arr[j];
+                arr[i] = arr[tempGreatestIndex];
+            arr[i+1] = arr[i+2];
+//            if(  i + 1 < arr.length-1) {
+//
 //                arr[i+1] = arr[i+2];
+//            } else {
+//                arr[i+1] = -1;
 //            }
 
 
