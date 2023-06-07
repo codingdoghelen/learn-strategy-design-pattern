@@ -87,7 +87,7 @@ public class CheckIfNandItsDoubleExist_1346 {
 
 
             } else if (target < arr[mid]) {
-//                mid--;
+//                mid--;Í
 //                start += 1;
 
                 end = mid-1;
