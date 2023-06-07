@@ -2,7 +2,7 @@ package com.demo.strategy.leetcode;
 
 import java.util.Arrays;
 
-public class Move_Zeroes_283 {
+public class MoveZeroes_283 {
 
     public static void main(String[] args) {
 //        moveZeroes(new int[]{3, 2, 2, 3});
