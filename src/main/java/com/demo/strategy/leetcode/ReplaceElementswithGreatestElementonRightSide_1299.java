@@ -12,66 +12,29 @@ public class ReplaceElementswithGreatestElementonRightSide_1299 {
 
         if (arr.length <= 1) return new int[]{-1};
 
-
         int j = 1;
-        int tempGreatestIndex =0;
-        int tempGreatest =0;
+        int tempGreatestIndex = 0;
+        int tempGreatest = 0;
 
-        for (int i = 0; i  < arr.length ; i++) {
+        for (int i = 0; i < arr.length; i++) {
 
-
-
-            while (j>i && j < arr.length-1 ) {
-                if(arr[j] > tempGreatestIndex) {
-                    tempGreatestIndex=j-1;
+            while (j > i && j < arr.length - 1) {
+                if (arr[j] > tempGreatestIndex) {
+                    tempGreatestIndex = j - 1;
                 }
                 j++;
 
             }
 
-            System.out.println(tempGreatestIndex);
-//
-//            System.out.println(j);
+            arr[i] = arr[tempGreatestIndex];
+            arr[i + 1] = arr[i + 2];
 
-//            if(i== arr.length-1) {
-//                arr[i] = -1;
-//            }
-//
-
-//            if (arr[i] < arr[j]){
-                arr[i] = arr[tempGreatestIndex];
-            arr[i+1] = arr[i+2];
-//            if(  i + 1 < arr.length-1) {
-//
-//                arr[i+1] = arr[i+2];
-//            } else {
-//                arr[i+1] = -1;
-//            }
-
-
-
-//            if(i== arr.length-1) {
-//                arr[i] = -1;
-//            }else if ( arr[j] < arr[i]) {
-////                arr[i] = arr[j];
-//                j+=1;
-//            }  else if ( arr[j] > arr[i]) {
-//                arr[i] = arr[j];
-//                i+=1;
-//            }  else {
-//                arr[i]  = arr[i];
-//            }
-//
-//            if (j < arr.length-1) {
-//
-//                j+=1;
-//            }
         }
 
-        for (int i = 0; i < arr.length; i++) {
-
-            System.out.println(arr[i]);
-        }
+//        for (int i = 0; i < arr.length; i++) {
+//
+//            System.out.println(arr[i]);
+//        }
         return arr;
     }
 }
