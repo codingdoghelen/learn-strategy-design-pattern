@@ -34,6 +34,13 @@ public class OptionalLearn {
 //                .collect(Collectors.joining(" ")).orElseGet(() -> test("s"));
         System.out.println(result);
 
+        List<String> combinedList = Stream.concat(
+                        testList.stream().flatMap(List::stream),
+                        empty.stream().flatMap(List::stream))
+                .collect(Collectors.toList());
+
+
+
 //        List<String> result = Stream.of(test, empty);
 //                .map(Optional::get)
 //                .flatMap(List::stream)
