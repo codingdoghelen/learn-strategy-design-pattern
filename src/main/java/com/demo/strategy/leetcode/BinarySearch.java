@@ -9,9 +9,10 @@ public class BinarySearch {
 
         int left = 0;
         int right = numbers.length - 1;
-        int mid = (left + right) / 2;
 
         while (left <= right) {
+            int mid = (left + right) / 2; // ********
+
             if (target > numbers[mid]) {
                 left = mid + 1;
             } else if (target < numbers[mid]) {
