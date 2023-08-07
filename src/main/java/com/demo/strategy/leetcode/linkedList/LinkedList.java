@@ -29,11 +29,19 @@ public class LinkedList {
 
 
         LinkedList x = new LinkedList();
-        x.addFirst(5);
-        x.addFirst(10);
-        x.addFirst(15);
+        x.addLast(10);
+        x.addLast(20);
+        x.addLast(30);
 
-//        System.out.println(x);
+        System.out.println(x.indexOf(10));
+        System.out.println(x.indexOf(20));
+        System.out.println(x.indexOf(30));
+        System.out.println(x.indexOf(40));
+
+        System.out.println(x.containsOf(10));
+        System.out.println(x.containsOf(20));
+        System.out.println(x.containsOf(30));
+        System.out.println(x.containsOf(40));
 
     }
 
@@ -41,7 +49,7 @@ public class LinkedList {
         Node node = new Node(item);
 
         if (first == null) {
-            first = last=node;
+            first = last = node;
         } else {
             last.next = node;
             last = node;
@@ -70,4 +78,28 @@ public class LinkedList {
     }
 
 
+    public int indexOf(int item) {
+
+        // Declare a counter to indicate the index
+        int index = 0;
+
+        // Loop once and find else it is -1
+        Node current = first;
+
+        // current hasnt reached last node yet
+        while (current != null) {
+            if (current.value == item) {
+                return index;
+            } else {
+                current = current.next;
+                index++;
+            }
+
+        }
+        return -1;
+    }
+
+    public boolean containsOf (int item) {
+        return indexOf(item) != -1;
+    }
 }
